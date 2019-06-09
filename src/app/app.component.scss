@@ -28,8 +28,9 @@ header {
   background: $dark-gray;
   border-radius: 5px;
 
-  & > h2 {
+  & > * {
     text-align: center;
+    margin: 5px;
   }
 }
 
