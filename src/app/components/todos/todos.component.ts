@@ -26,8 +26,11 @@ export class TodosComponent implements OnInit {
   }
 
   addTodo(todo) {
-    this.todos.push(todo);
-    console.log("Added todo: ", todo);
+    this.todoService.addTodo(todo).subscribe(t => {
+      todo.id = t.id;
+      this.todos.push(todo);
+      console.log("Added todo: ", todo);
+    });
   }
 
 }
