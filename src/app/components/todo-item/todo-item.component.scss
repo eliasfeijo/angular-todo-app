@@ -1,13 +1,17 @@
 .todo {
   margin: 10px;
+  display: flex;
+  align-items: center;
 
   &.is-complete {
-    text-decoration: line-through;
+
+    & > p {
+      text-decoration: line-through;
+    }    
   }
 
   & > p {
-    display: inline;
-    margin: 0 10px;
+    flex-grow: 10;
   }
 
   & > .btn-remove {
@@ -17,6 +21,7 @@
     border-radius: 15px;
     user-select: none;
     outline: none;
+    align-self: center;
   }
 
 }
