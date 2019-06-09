@@ -1,0 +1,22 @@
+.todo {
+  margin: 10px;
+
+  &.is-complete {
+    text-decoration: line-through;
+  }
+
+  & > p {
+    display: inline;
+    margin: 0 10px;
+  }
+
+  & > .btn-remove {
+    color: red;
+    background-color: transparent;
+    border: 2px solid red;
+    border-radius: 15px;
+    user-select: none;
+    outline: none;
+  }
+
+}
