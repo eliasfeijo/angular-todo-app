@@ -1,0 +1,47 @@
+@import 
+  "colors",
+  "breakpoints"
+;
+
+.container {
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: auto;
+  @media screen and (min-width: $on-medium) {
+    width: 75%;
+  }
+  @media screen and (min-width: $on-large) {
+    width: 50%;
+  }
+
+  & > * {
+    width: 100%;
+  }
+}
+
+header {
+  background: $dark-gray;
+  border-radius: 5px;
+
+  & > h2 {
+    text-align: center;
+  }
+}
+
+main {
+  background: $gray;
+  border-radius: 5px;
+  max-height: 100%;
+  overflow: auto;
+}
+
+footer {
+  text-align: center;
+  background: $light-gray;
+  border-radius: 10px;
+}
