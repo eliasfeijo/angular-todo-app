@@ -16,6 +16,9 @@ export class AddTodoComponent implements OnInit {
   }
 
   onSubmit() {
+    if(this.title === null || this.title.match(/^ *$/) !== null) {
+      return;
+    }
     const todo = {
       title: this.title,
       completed: false

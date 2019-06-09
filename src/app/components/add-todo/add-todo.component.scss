@@ -1,0 +1,11 @@
+form {
+  display: flex;
+  padding: 2px;
+  & > input[type='text'] {
+    flex-grow: 10;
+  }
+  
+  & > input[type='submit'] {
+    flex-grow: 2;
+  }
+}
