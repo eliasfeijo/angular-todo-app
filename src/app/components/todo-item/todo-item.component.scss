@@ -12,6 +12,7 @@
 
   & > p {
     flex-grow: 10;
+    word-break: break-all;
   }
 
   & > .btn-remove {
